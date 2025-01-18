@@ -1,20 +1,20 @@
-# RISC-V Internship Program Powered by SAMSUNG and VSD
-### Co- Founder of VSD : Mr. Kunal Ghosh
+# RISC-V Internship Program Powered by SAMSUNG and VSD🎯
+###Co- Founder of VSD : Mr. Kunal Ghosh
 
-## Description
+## Description💪
 This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architecture, to teach students about VLSI SoC design and RISC-V using open-source tools. The program is led by Mr. Kunal Ghosh, Co-Founder of VSD.
 
 
-## About Me
+## About Me ✒
 
-**Name:** Bhoomika H Salian  
-**College:** Sahyadri College of Engineering and Management  
-**Email ID:** [bhoomikahsalian@gmail.com](mailto:bhoomikahsalian@gmail.com)  
-**GitHub Profile:** [Bhoomika-Sahyadri-ECE](https://github.com/Bhoomika-Sahyadri-ECE)  
-**LinkedIn Profile:** [Bhoomika H Salian](https://www.linkedin.com/in/bhoomika-h-salian-7470a3253/)
+**👩‍🎓Name:** Bhoomika H Salian  
+**📌College:** Sahyadri College of Engineering and Management  
+**🔑Email ID:** [bhoomikahsalian@gmail.com](mailto:bhoomikahsalian@gmail.com)  
+**🏷️GitHub Profile:** [Bhoomika-Sahyadri-ECE](https://github.com/Bhoomika-Sahyadri-ECE)  
+**🔗LinkedIn Profile:** [Bhoomika H Salian](https://www.linkedin.com/in/bhoomika-h-salian-7470a3253/)
 
 
-## Task Overview  
+## Task Overview📅
 <details>
 <summary>Task 1: Introduction to RISC-V Architecture and Toolchain Setup</summary>
 
