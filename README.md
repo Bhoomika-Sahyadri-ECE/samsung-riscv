@@ -1,40 +1,41 @@
-RISC-V Internship Program Powered by SAMSUNG and VSD
+# RISC-V Internship Program Powered by SAMSUNG and VSD
 
-Description
+## Description
+This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architecture, to teach students about VLSI SoC design and RISC-V using open-source tools. The program is led by Mr. Kunal Ghosh, Co-Founder of VSD.
 
-The RISC-V Internship is a hands-on training program utilizing the VSDSquadron Mini, which is based on the RISC-V architecture. The internship leverages open-source tools to provide students with comprehensive knowledge in VLSI SoC design and RISC-V technology. The program is guided by Mr. Kunal Ghosh, Co-Founder of VSD.
 
-About Me
+## About Me
 
-Name: Bhoomika H SalianCollege: Sahyadri College of Engineering and ManagementEmail ID: bhoomikahsalian@gmail.comGitHub Profile: Bhoomika-Sahyadri-ECELinkedIn Profile: Bhoomika H Salian
+**Name:** Bhoomika H Salian  
+**College:** Sahyadri College of Engineering and Management  
+**Email ID:** [bhoomikahsalian@gmail.com](mailto:bhoomikahsalian@gmail.com)  
+**GitHub Profile:** [Bhoomika-Sahyadri-ECE](https://github.com/Bhoomika-Sahyadri-ECE)  
+**LinkedIn Profile:** [Bhoomika H Salian](https://www.linkedin.com/in/bhoomika-h-salian-7470a3253/)
 
-Task Overview
 
-Task 1: Introduction to RISC-V Architecture and Toolchain Setup
+## Task Overview  
+<details>
+<summary>Task 1: Introduction to RISC-V Architecture and Toolchain Setup</summary>
 
-GitHub Repository: Task 1Description:
+**GitHub Repository:** [Task 1](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%201)  
+**Description:**
 
-Set up the development environment for RISC-V on the VSDSquadron Mini.
+- Set up the development environment for RISC-V on the VSDSquadron Mini.
+- Install necessary open-source tools and verify the RISC-V toolchain.
+- Familiarize with the basic RISC-V architecture, including registers and instruction sets.
+- Document the setup process and any issues encountered during the setup.
 
-Install necessary open-source tools and verify the RISC-V toolchain.
+</details>
 
-Familiarize with the basic RISC-V architecture, including registers and instruction sets.
+<details>
+<summary>Task 2: Implementing Basic RISC-V Programs</summary>
 
-Document the setup process and any issues encountered during the setup.
+**GitHub Repository:** [Task 2](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%202)  
+**Description:**
 
-Task 2: Implementing Basic RISC-V Programs
+- Write and execute basic RISC-V assembly programs.
+- Explore the functionalities of the RISC-V instruction set by implementing simple arithmetic and logical operations.
+- Debug and test the programs using the RISC-V simulator.
+- Record the results and learning outcomes from each program.
 
-GitHub Repository: Task 2Description:
-
-Write and execute basic RISC-V assembly programs.
-
-Explore the functionalities of the RISC-V instruction set by implementing simple arithmetic and logical operations.
-
-Debug and test the programs using the RISC-V simulator.
-
-Record the results and learning outcomes from each program.
-
-Conclusion
-
-This internship offers a solid foundation in RISC-V architecture and VLSI SoC design, providing valuable hands-on experience with industry-relevant tools and methodologies. Under the guidance of Mr. Kunal Ghosh, participants gain practical knowledge and skills essential for a career in VLSI and semiconductor industries.
-
+</details>
