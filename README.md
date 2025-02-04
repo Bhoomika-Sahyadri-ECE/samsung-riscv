@@ -44,7 +44,7 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 <details>
 <summary> Task 3: Assembly Instructions</summary>
 
-  **GitHub Repository:** [Task 3](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%203)
+**GitHub Repository:** [Task 3](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%203)
 **Description:**
 
 ### 1. `lui a0, 0x2b`
@@ -52,8 +52,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Opcode:** `0110111`
 - **Binary Encoding:** `000000000000001011010100110111`
 - **Hexadecimal:** `0x002b537`
-  
-![LUI Instruction](task%203/images/lui_a0.png)
+ ![lui_a0](https://github.com/user-attachments/assets/4bb8fc38-a449-4334-8044-90a047fbeca3)
+ 
 
 ---
 
@@ -63,7 +63,7 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Binary Encoding:** `11111111111100010000000010010011`
 - **Hexadecimal:** `0xFE010113`
 
-![ADDI Instruction](images/addi_sp.png)
+![addi_sp](https://github.com/user-attachments/assets/a76ba6b1-fc5e-4531-a45d-7365e09b8780)
 
 ---
 
@@ -73,7 +73,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Binary Encoding:** `11111111111111110000011110010111`
 - **Hexadecimal:** `0xffff0797`
 
-![AUIPC Instruction](images/auipc_a5.png)
+![auipc_a5](https://github.com/user-attachments/assets/18130065-d54d-4a5b-b88e-0c38bd23d986)
+
 
 ---
 
@@ -82,7 +83,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Opcode:** `1101111`
 - **Hexadecimal:** `0x0c0000ef`
 
-![JAL Instruction](images/jal_ra.png)
+![jal_ra](https://github.com/user-attachments/assets/83aac50a-acd7-4e1d-bcef-0a150efeefec)
+
 
 ---
 
@@ -90,8 +92,9 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Operation:** Store byte from `a5` to memory at `gp + 1944`.
 - **Opcode:** `0100011`
 - **Hexadecimal:** `0x781fc23`
+  
+![sb_a5](https://github.com/user-attachments/assets/635cfec0-9de7-496f-b686-84cb153bc8c0)
 
-![SB Instruction](images/sb_a5.png)
 
 ---
 
@@ -99,16 +102,18 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Operation:** Branch if `a5` is not zero to `1015c`.
 - **Opcode:** `1100011`
 - **Hexadecimal:** `0x04079463`
+  
+![bnez_a5](https://github.com/user-attachments/assets/a88ea41b-a81e-4685-8306-b01f41eb257c)
 
-![BNEZ Instruction](images/bnez_a5.png)
 
 ---
 
 ### 7. `jalr zero, 0(register_fini)`
 - **Operation:** Jump and link register (return to zero).
 - **Hexadecimal:** `0x00100073`
+  
+![jalr_zero](https://github.com/user-attachments/assets/becc702e-b5eb-4afa-9364-55d7c11496dd)
 
-![JALR Instruction](images/jalr_zero.png)
 
 ---
 
@@ -117,7 +122,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Opcode:** `0000011`
 - **Hexadecimal:** `0x00052083`
 
-![LW Instruction](images/lw_a0.png)
+![lw_a0](https://github.com/user-attachments/assets/c1dddfb1-85f0-4407-80b9-818f8685b37a)
+
 
 ---
 
@@ -125,7 +131,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Operation:** Load immediate `1` into `a1`.
 - **Hexadecimal:** `0x0100793`
 
-![LI Instruction](images/li_a1.png)
+![li_a1](https://github.com/user-attachments/assets/9d07ddae-6967-4951-81ef-6fdebadaae1d)
+
 
 ---
 
@@ -133,8 +140,9 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Operation:** Subtract (`a2 = a2 - a0`).
 - **Opcode:** `0110011`
 - **Hexadecimal:** `0x40a60633`
+  
+![sub_a2](https://github.com/user-attachments/assets/11a51aca-e854-4617-976f-de637f5c960e)
 
-![SUB Instruction](images/sub_a2.png)
 
 ---
 
@@ -142,7 +150,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Operation:** Jump and link (`ra = PC + 4; PC = 0x10264`).
 - **Hexadecimal:** `0x0cc000ef`
 
-![JAL Instruction](images/jal_ra_10264.png)
+![jal_ra](https://github.com/user-attachments/assets/47e071ad-ed23-4d69-9a97-d158d8bbd5fd)
+
 
 ---
 
@@ -150,7 +159,8 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Operation:** Add immediate (`a0 = a0 + 332`).
 - **Hexadecimal:** `0x14c50513`
 
-![ADDI Instruction](images/addi_a0.png)
+![addi_a0](https://github.com/user-attachments/assets/99adf464-1b2a-47ea-80d4-97a2e3442e68)
+
 
 ---
 
@@ -159,22 +169,25 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Opcode:** `1101111`
 - **Hexadecimal:** `0x0c80006f`
 
-![JUMP Instruction](images/j_101c0.png)
+![j_101c0](https://github.com/user-attachments/assets/9f8f3837-9fc9-4890-8b77-99125a1cf248)
+
 
 ---
 
 ### 14. `jalr ra, 8(sp)`
 - **Operation:** Jump to address in `sp + 8`, store return address in `ra`.
 - **Hexadecimal:** `0x00813083`
+  
+![jal_ra](https://github.com/user-attachments/assets/2139e451-30e5-4410-876d-704504c7e591)
 
-![JALR Instruction](images/jalr_ra.png)
 
 ---
 
 ### 15. `ret`
 - **Operation:** Return from function (`jalr x0, 0(ra)`).
 - **Hexadecimal:** `0x00008067`
+  
+![ret](https://github.com/user-attachments/assets/02178bec-6b91-44d0-93b8-9d3f90ce5599)
 
-![RET Instruction](images/ret.png)
 
 ---
