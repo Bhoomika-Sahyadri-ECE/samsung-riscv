@@ -53,7 +53,7 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 - **Binary Encoding:** `000000000000001011010100110111`
 - **Hexadecimal:** `0x002b537`
 
-![LUI Instruction](images/lui_a0.png)
+![LUI Instruction]("D:\samsung\task 3\lui_a0.png")
 
 ---
 
