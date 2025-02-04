@@ -42,7 +42,10 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 </details>
 
 <details>
-<summary> Task 3: Assembly Instructionskjjjjjjjjjjjjjjjjjj 
+<summary> Task 3: Assembly Instructions</summary>
+
+  **GitHub Repository:** [Task 2](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%202)  
+**Description:**
 ### 1. `lui a0, 0x2b`
 - **Operation:** Load the upper 20 bits of an immediate (0x2b) into register `a0`.
 - **Opcode:** `0110111`
