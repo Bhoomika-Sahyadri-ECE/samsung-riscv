@@ -196,6 +196,146 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 
 
 <details>
+<summary>Task 5: Trying out the new VSD squadron Mini board with simple circuit</summary>
+
+**GitHub Repository:** [Task 5](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%205)
+**Description:**  
+This project demonstrates **GPIO-based LED control using push buttons** on the **VSDSquadron Mini**, a **RISC-V-based SoC development kit**. The system responds to user input by lighting up LEDs independently based on the button pressed.
+
+- **Button 1 Pressed** → **LED 1 turns ON**  
+- **Button 2 Pressed** → **LED 2 turns ON**  
+- **Button 3 Pressed** → **LED 3 turns ON**  
+
+
+## **Components Required**
+- **VSDSquadron Mini** (1x)  
+- **LEDs** (3x)  
+- **Push Buttons** (3x)  
+- **Jumper Wires** (As needed)  
+- **Breadboard** (1x)  
+
+
+## **Pin Connections**
+
+### **LEDs**
+| LED  | VSDSquadron Mini Pin |
+|------|----------------------|
+| LED 1 | PC0 |
+| LED 2 | PC1 |
+| LED 3 | PC2 |
+
+### **Push Buttons (Active HIGH Configuration)**
+| Button  | VSDSquadron Mini Pin |
+|---------|----------------------|
+| Button 1 | PD1 |
+| Button 2 | PD2 |
+| Button 3 | PD3 |
+
+
+## **Wiring Details**
+
+### **LED Connections**
+- Connect the **anode (+)** of **LED 1** to **PC0**.  
+- Connect the **anode (+)** of **LED 2** to **PC1**.  
+- Connect the **anode (+)** of **LED 3** to **PC2**.  
+- Connect the **cathode (-)** of all LEDs to **GND**.  
+
+### **Push Button Connections**
+- Connect one terminal of **Button 1** to **PD1**.  
+- Connect one terminal of **Button 2** to **PD2**.  
+- Connect one terminal of **Button 3** to **PD3**.  
+- Connect the **other terminal** of all buttons to **GND**.  
+
+
+## **Logic Implementation**
+| Button Pressed | LEDs Activated |
+|---------------|---------------|
+| **Button 1 (PD1)** | **LED 1 (PC0) turns ON** |
+| **Button 2 (PD2)** | **LED 2 (PC1) turns ON** |
+| **Button 3 (PD3)** | **LED 3 (PC2) turns ON** |
+
+
+
+## **Circuit Diagram**
+![Glowing LED circuit](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/ciruit%20diagram.png)
+
+
+
+## ** Working**
+- The code is written for the **VSD Squadron Mini Board**.  
+- Three LEDs are connected to **PC0, PC1, and PC2**, while three push buttons are connected to **PD1, PD2, and PD3**.  
+- In the `setup()` function:
+  - LED pins are configured as **output**.
+  - Button pins are configured as **input with internal pull-up resistors enabled**.  
+- In the `loop()` function:
+  - The state of each button is read using `digitalRead()`. Since **pull-up resistors** are used, the buttons read **LOW when pressed**.  
+  - **Button 1 pressed** → Only **LED 1** turns ON, others remain OFF.  
+  - **Button 2 pressed** → Only **LED 2** turns ON, others remain OFF.  
+  - **Button 3 pressed** → Only **LED 3** turns ON, others remain OFF.  
+  - **No button pressed** → All LEDs remain OFF.  
+
+
+## ** Code Implementation**
+```cpp
+#include <Arduino.h>
+
+// Define LED pins
+#define LED1 PC0
+#define LED2 PC1
+#define LED3 PC2
+
+// Define Button pins
+#define BUTTON1 PD1
+#define BUTTON2 PD2
+#define BUTTON3 PD3
+
+void setup() {
+    // Configure LED pins as OUTPUT
+    pinMode(LED1, OUTPUT);
+    pinMode(LED2, OUTPUT);
+    pinMode(LED3, OUTPUT);
+
+    // Configure Button pins as INPUT with PULL-UP
+    pinMode(BUTTON1, INPUT_PULLUP);
+    pinMode(BUTTON2, INPUT_PULLUP);
+    pinMode(BUTTON3, INPUT_PULLUP);
+}
+
+void loop() {
+    // Read button states
+    bool button1State = digitalRead(BUTTON1) == LOW;
+    bool button2State = digitalRead(BUTTON2) == LOW;
+    bool button3State = digitalRead(BUTTON3) == LOW;
+
+    // Control LEDs independently based on button presses
+    digitalWrite(LED1, button1State ? HIGH : LOW);
+    digitalWrite(LED2, button2State ? HIGH : LOW);
+    digitalWrite(LED3, button3State ? HIGH : LOW);
+}
+```
+
+
+## **📸 Response Captured**
+| **Button Pressed** | **LED Status** |
+|--------------------|---------------|
+| **Button 1** Pressed | ![One LED Glowing](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/button%201.jpg) |
+| **Button 2** Pressed | ![Two LEDs Glowing](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/button%202.jpg) |
+| **Button 3** Pressed | ![Three LEDs Glowing](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/button%203.jpg) |
+
+
+## **Key Takeaways**
+**Independent LED Control:** Each button **independently** turns ON a specific LED.  
+**GPIO Handling:** Demonstrates **basic GPIO input (buttons)** and **output (LEDs)**.  
+**PlatformIO & RISC-V Development:** Utilizes **PlatformIO for VSDSquadron Mini programming**.  
+
+###Conclusion
+This project successfully demonstrates the use of GPIO-based LED control with push buttons on the VSDSquadron Mini board. By implementing an independent control logic for each LED, we showcase how simple button inputs can be used to drive different outputs effectively. This hands-on experiment reinforces fundamental embedded system concepts like digital input/output operations, pull-up resistors, and microcontroller-based control logic.
+
+
+</details>
+
+
+<details>
 <summary>Task 6: Testing and Implementing new Logic</summary>
 
 **GitHub Repository:** [Task 6](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%206)
@@ -336,5 +476,4 @@ void loop() {
 ### Conclusion  
 This project demonstrates how to control LEDs using push buttons on an VSD squadron Mini board.The logic implemented allows different LED patterns based on button presses, making it a simple yet effective example of digital input and output control. This can be further expanded for more complex interactive applications. 🚀
 
-</details>
 </details>
