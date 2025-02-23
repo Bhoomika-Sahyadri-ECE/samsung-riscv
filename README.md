@@ -262,4 +262,14 @@ This project illustrates fundamental **embedded system concepts**, including **G
 ![Glowing LEd circuit](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/ciruit%20diagram.png)
 
 
+### Working
+- The code is written for an Arduino-based system using an STM32 microcontroller.  
+- Three LEDs are connected to pins PC1, PC2, and PC3, and three push buttons are connected to pins PD1, PD2, and PD3.  
+- In the `setup()` function, the LED pins are configured as output, and the button pins are configured as input with internal pull-up resistors enabled.  
+- In the `loop()` function, the state of each button is read using `digitalRead()`, and since pull-up resistors are used, the buttons read LOW when pressed.  
+- If Button 1 is pressed, only LED1 turns on, while LED2 and LED3 remain off.  
+- If Button 2 is pressed, LED1 and LED2 turn on, while LED3 remains off.  
+- If Button 3 is pressed, all three LEDs turn on.  
+- If no button is pressed, all LEDs remain off.  
+- The logic ensures that pressing a button overrides the previous LED state based on priority, meaning the highest button number pressed determines the LED pattern.
 </details>
