@@ -193,9 +193,13 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 ---
   
 <details>
-<summary>Task 5: Testing the VSDSquadron Board with Simple Code</summary>
-## GitHub Repository  
-[Task 5](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%205)  
+
+ 
+<details>
+<summary> Task 5: Testing the VSDSquadron Board with Simple Code</summary>
+
+**GitHub Repository:** [Task 3]([https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%205])
+**Description:**
 
 ## Project Description  
 This project demonstrates **GPIO-based LED control using push buttons** on the **VSDSquadron Mini**, a **RISC-V-based SoC development kit**. The system responds to user input by lighting up LEDs in a predefined pattern:  
