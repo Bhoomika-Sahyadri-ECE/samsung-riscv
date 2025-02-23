@@ -332,4 +332,9 @@ void loop() {
 ![Button 2 pressed](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%206/two%20leds%20glowing.png)
 ![Button 3 pressed](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%206/three%20leds%20glowing.png)
 
+
+### Conclusion  
+This project demonstrates how to control LEDs using push buttons on an VSD squadron Mini board.The logic implemented allows different LED patterns based on button presses, making it a simple yet effective example of digital input and output control. This can be further expanded for more complex interactive applications. 🚀
+
+</details>
 </details>
