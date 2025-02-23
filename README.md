@@ -209,7 +209,6 @@ This project demonstrates **GPIO-based LED control using push buttons** on the *
 
 This project illustrates fundamental **embedded system concepts**, including **GPIO input/output operations**. The implementation is done in **C using the PlatformIO IDE**, providing a hands-on approach to hardware interaction.  
 
----
 
 ## Components Required  
 
@@ -223,7 +222,6 @@ This project illustrates fundamental **embedded system concepts**, including **G
 | Jumper Wires   | As needed |
 | Breadboard     | 1        |
 
----
 
 ## Pin Connections  
 
@@ -241,7 +239,6 @@ This project illustrates fundamental **embedded system concepts**, including **G
 | Button 2 | PD2 |
 | Button 3 | PD3 |
 
----
 
 ## Wiring Details  
 
@@ -258,7 +255,6 @@ This project illustrates fundamental **embedded system concepts**, including **G
 - Connect the **other terminal** of all buttons to **GND**.  
 - Use a **10kΩ pull-down resistor** between each button’s input pin (**PD1, PD2, PD3**) and **GND**.  
 
----
 
 ## Logic Implementation  
 
@@ -267,3 +263,5 @@ This project illustrates fundamental **embedded system concepts**, including **G
 | **Button 1 (PD1)** | **LED 1 (PC0) turns ON** |
 | **Button 2 (PD2)** | **LED 1 (PC0) & LED 2 (PC1) turn ON** |
 | **Button 3 (PD3)** | **LED 1 (PC0), LED 2 (PC1) & LED 3 (PC2) turn ON** |
+
+<details>
