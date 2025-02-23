@@ -326,5 +326,10 @@ void loop() {
     }
 }
 ```
+### Response Captured
+
+![Button 1 pressed](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%206/one%20led%20glowing.png)
+![Button 2 pressed](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%206/two%20leds%20glowing.png)
+![Button 3 pressed](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%206/three%20leds%20glowing.png)
 
 </details>
