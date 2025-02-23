@@ -261,7 +261,7 @@ This project demonstrates **GPIO-based LED control using push buttons** on the *
 
 
 
-## ** Working**
+## **Working**
 - The code is written for the **VSD Squadron Mini Board**.  
 - Three LEDs are connected to **PC0, PC1, and PC2**, while three push buttons are connected to **PD1, PD2, and PD3**.  
 - In the `setup()` function:
@@ -275,7 +275,7 @@ This project demonstrates **GPIO-based LED control using push buttons** on the *
   - **No button pressed** → All LEDs remain OFF.  
 
 
-## ** Code Implementation**
+## **Code Implementation**
 ```cpp
 #include <Arduino.h>
 
@@ -315,7 +315,7 @@ void loop() {
 ```
 
 
-## **📸 Response Captured**
+## **Response Captured**
 | **Button Pressed** | **LED Status** |
 |--------------------|---------------|
 | **Button 1** Pressed | ![One LED Glowing](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/button%201.jpg) |
