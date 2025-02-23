@@ -257,4 +257,9 @@ This project illustrates fundamental **embedded system concepts**, including **G
 | **Button 2 (PD2)** | **LED 1 (PC0) & LED 2 (PC1) turn ON** |
 | **Button 3 (PD3)** | **LED 1 (PC0), LED 2 (PC1) & LED 3 (PC2) turn ON** |
 
+
+### Circuit Diagram
+![Glowing LEd circuit](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/ciruit%20diagram.png)
+
+
 </details>
