@@ -196,9 +196,9 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 
 
 <details>
-<summary>Task 5: Testing the VSDSquadron Board with Simple Code</summary>
+<summary>Task 6: Testing and Implementing new Logic</summary>
 
-**GitHub Repository:** [Task 5](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%205)  
+**GitHub Repository:** [Task 6](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%206)
 
 **Description:**  
 This project demonstrates **GPIO-based LED control using push buttons** on the **VSDSquadron Mini**, a **RISC-V-based SoC development kit**. The system responds to user input by lighting up LEDs in a predefined pattern:  
@@ -259,11 +259,11 @@ This project illustrates fundamental **embedded system concepts**, including **G
 
 
 ### Circuit Diagram
-![Glowing LEd circuit](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%205/ciruit%20diagram.png)
+![Glowing LEd circuit](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/blob/main/task%206/ciruit%20diagram.png)
 
 
 ### Working
-- The code is written for an Arduino-based system using an STM32 microcontroller.  
+- The code is written for an Arduino-based system using VSD squadron Mini
 - Three LEDs are connected to pins PC1, PC2, and PC3, and three push buttons are connected to pins PD1, PD2, and PD3.  
 - In the `setup()` function, the LED pins are configured as output, and the button pins are configured as input with internal pull-up resistors enabled.  
 - In the `loop()` function, the state of each button is read using `digitalRead()`, and since pull-up resistors are used, the buttons read LOW when pressed.  
@@ -272,4 +272,65 @@ This project illustrates fundamental **embedded system concepts**, including **G
 - If Button 3 is pressed, all three LEDs turn on.  
 - If no button is pressed, all LEDs remain off.  
 - The logic ensures that pressing a button overrides the previous LED state based on priority, meaning the highest button number pressed determines the LED pattern.
+
+### Code
+```cpp
+#include <Arduino.h>
+
+// Define LED pins
+#define LED1 PC1
+#define LED2 PC2
+#define LED3 PC3
+
+// Define Button pins
+#define BUTTON1 PD1
+#define BUTTON2 PD2
+#define BUTTON3 PD3
+
+void setup() {
+    // Configure LED pins as OUTPUT
+    pinMode(LED1, OUTPUT);
+    pinMode(LED2, OUTPUT);
+    pinMode(LED3, OUTPUT);
+
+    // Configure Button pins as INPUT with PULL-UP
+    pinMode(BUTTON1, INPUT_PULLUP);
+    pinMode(BUTTON2, INPUT_PULLUP);
+    pinMode(BUTTON3, INPUT_PULLUP);
+}
+
+void loop() {
+    // Read button states
+    bool button1State = digitalRead(BUTTON1) == LOW;
+    bool button2State = digitalRead(BUTTON2) == LOW;
+    bool button3State = digitalRead(BUTTON3) == LOW;
+
+    // Control LEDs based on button presses
+    if (button1State) {
+        digitalWrite(LED1, HIGH);
+        digitalWrite(LED2, LOW);
+        digitalWrite(LED3, LOW);
+    } 
+    else if (button2State) {
+        digitalWrite(LED1, HIGH);
+        digitalWrite(LED2, HIGH);
+        digitalWrite(LED3, LOW);
+    } 
+    else if (button3State) {
+        digitalWrite(LED1, HIGH);
+        digitalWrite(LED2, HIGH);
+        digitalWrite(LED3, HIGH);
+    } 
+    else {
+        // Turn off all LEDs when no button is pressed
+        digitalWrite(LED1, LOW);
+        digitalWrite(LED2, LOW);
+        digitalWrite(LED3, LOW);
+    }
+}
+
+
+### Conclusion  
+This project demonstrates how to control LEDs using push buttons on an VSD squadron Mini board.The logic implemented allows different LED patterns based on button presses, making it a simple yet effective example of digital input and output control. This can be further expanded for more complex interactive applications. 🚀
+
 </details>
