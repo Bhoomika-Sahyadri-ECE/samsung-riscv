@@ -44,7 +44,7 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 <details>
 <summary> Task 3: Assembly Instructions</summary>
 
-**GitHub Repository:** [Task 3](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%203)
+**GitHub Repository:** [Task 3](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%203)               
 **Description:**
 
 ### 1. `lui a0, 0x2b`
