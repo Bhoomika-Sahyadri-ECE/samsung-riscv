@@ -212,9 +212,7 @@ This project illustrates fundamental **embedded system concepts**, including **G
 ### Components Required  
 - **VSDSquadron Mini** (1x)  
 - **LEDs** (3x)  
-- **Resistors (220Ω) for LEDs** (3x)  
 - **Push Buttons** (3x)  
-- **Pull-down Resistors (10kΩ) for Buttons** (3x)  
 - **Jumper Wires** (As needed)  
 - **Breadboard** (1x)  
 
@@ -237,9 +235,9 @@ This project illustrates fundamental **embedded system concepts**, including **G
 ### Wiring Details  
 
 #### **LED Connections**  
-- Connect the **anode (+)** of **LED 1** to **PC0** via a **220Ω resistor**.  
-- Connect the **anode (+)** of **LED 2** to **PC1** via a **220Ω resistor**.  
-- Connect the **anode (+)** of **LED 3** to **PC2** via a **220Ω resistor**.  
+- Connect the **anode (+)** of **LED 1** to **PC0**.  
+- Connect the **anode (+)** of **LED 2** to **PC1** via a.  
+- Connect the **anode (+)** of **LED 3** to **PC2** via a **.  
 - Connect the **cathode (-)** of all LEDs to **GND**.  
 
 #### **Push Button Connections**  
@@ -247,7 +245,6 @@ This project illustrates fundamental **embedded system concepts**, including **G
 - Connect one terminal of **Button 2** to **PD2**.  
 - Connect one terminal of **Button 3** to **PD3**.  
 - Connect the **other terminal** of all buttons to **GND**.  
-- Use a **10kΩ pull-down resistor** between each button’s input pin (**PD1, PD2, PD3**) and **GND**.  
 
 ### Logic Implementation  
 
