@@ -198,7 +198,7 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 <details>
 <summary>Task 5: Trying out the new VSD squadron Mini board with simple circuit</summary>
 
-**GitHub Repository:** [Task 5](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%205)
+**GitHub Repository:** [Task 5](https://github.com/Bhoomika-Sahyadri-ECE/samsung-riscv/tree/main/task%205)                                                    
 **Description:**  
 This project demonstrates **GPIO-based LED control using push buttons** on the **VSDSquadron Mini**, a **RISC-V-based SoC development kit**. The system responds to user input by lighting up LEDs independently based on the button pressed.
 
@@ -328,7 +328,7 @@ void loop() {
 **GPIO Handling:** Demonstrates **basic GPIO input (buttons)** and **output (LEDs)**.  
 **PlatformIO & RISC-V Development:** Utilizes **PlatformIO for VSDSquadron Mini programming**.  
 
-###Conclusion
+### **Conclusion**
 This project successfully demonstrates the use of GPIO-based LED control with push buttons on the VSDSquadron Mini board. By implementing an independent control logic for each LED, we showcase how simple button inputs can be used to drive different outputs effectively. This hands-on experiment reinforces fundamental embedded system concepts like digital input/output operations, pull-up resistors, and microcontroller-based control logic.
 
 
