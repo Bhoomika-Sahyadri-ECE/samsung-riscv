@@ -192,7 +192,7 @@ This RISC-V Internship uses the VSDSquadron Mini, based on the RISC-V architectu
 
 ---
   
-<details>
+</details>
 
 
 <details>
